@@ -43,6 +43,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		contentPane.add(lblNhap);
 		
 		txtNhap = new JTextField();
+		txtNhap.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		txtNhap.setBounds(190, 67, 340, 38);
 		contentPane.add(txtNhap);
 		txtNhap.setColumns(10);
@@ -103,6 +104,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		contentPane.add(lblKtQu);
 		
 		txtKetQua = new JTextField();
+		txtKetQua.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		txtKetQua.setEnabled(false);
 		txtKetQua.setEditable(false);
 		txtKetQua.setColumns(10);
@@ -117,6 +119,20 @@ public class ManHinhDoiDonVi extends JFrame {
 		//chuyển kiểu
 		Double VND = Double.parseDouble(str_VND);
 		//tính toán
+		double doi = VND/change;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(doi));
+	}
+	void HamDoiEur() {
+		
+	}
+	void HamDoiNdt() {
+		
+	}
+	void HamDoiDongYen() {
+		
+	}
+	void HamDoiDongWon(){
 		
 	}
 }
