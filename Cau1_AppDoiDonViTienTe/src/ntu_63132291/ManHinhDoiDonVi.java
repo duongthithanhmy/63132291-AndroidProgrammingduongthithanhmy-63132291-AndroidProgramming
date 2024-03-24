@@ -121,7 +121,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		//tính toán
 		double doi = VND/change;
 		//Đưa ra hiển thị lên điều khiển
-		txtKetQua.setText(String.valueOf(doi));
+		txtKetQua.setText(String.format("%.2f",doi));
 	}
 	void HamDoiEur() {
 		//lấy dữ liệu từ điều khiển
@@ -133,7 +133,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		//tính toán
 		double doi = VND/change;
 		//Đưa ra hiển thị lên điều khiển
-		txtKetQua.setText(String.valueOf(doi));
+		txtKetQua.setText(String.format("%.2f",doi));
 	}
 	void HamDoiNdt() {
 		//lấy dữ liệu từ điều khiển
@@ -145,7 +145,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		//tính toán
 		double doi = VND/change;
 		//Đưa ra hiển thị lên điều khiển
-		txtKetQua.setText(String.valueOf(doi));
+		txtKetQua.setText(String.format("%.2f",doi));
 	}
 	void HamDoiDongYen() {
 		//lấy dữ liệu từ điều khiển
@@ -157,7 +157,7 @@ public class ManHinhDoiDonVi extends JFrame {
 		//tính toán
 		double doi = VND/change;
 		//Đưa ra hiển thị lên điều khiển
-		txtKetQua.setText(String.valueOf(doi));
+		txtKetQua.setText(String.format("%.2f",doi));
 	}
 	void HamDoiDongWon(){
 		//lấy dữ liệu từ điều khiển
@@ -169,6 +169,6 @@ public class ManHinhDoiDonVi extends JFrame {
 		//tính toán
 		double doi = VND/change;
 		//Đưa ra hiển thị lên điều khiển
-		txtKetQua.setText(String.valueOf(doi));
+		txtKetQua.setText(String.format("%.2f",doi));
 	}
 }
