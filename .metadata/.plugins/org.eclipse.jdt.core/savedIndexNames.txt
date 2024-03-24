@@ -1,3 +1,2 @@
 INDEX VERSION 1.134+D:\63132291-AndroidProgramming\63132291-AndroidProgramming\.metadata\.plugins\org.eclipse.jdt.core
-1798173023.index
 1865797976.index
