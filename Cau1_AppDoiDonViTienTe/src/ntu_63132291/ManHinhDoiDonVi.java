@@ -136,7 +136,16 @@ public class ManHinhDoiDonVi extends JFrame {
 		txtKetQua.setText(String.valueOf(doi));
 	}
 	void HamDoiNdt() {
-		
+		//lấy dữ liệu từ điều khiển
+		String str_VND = txtNhap.getText();
+		//tỉ giá hoán đổi
+		double change = 3467;
+		//chuyển kiểu
+		Double VND = Double.parseDouble(str_VND);
+		//tính toán
+		double doi = VND/change;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(doi));
 	}
 	void HamDoiDongYen() {
 		
