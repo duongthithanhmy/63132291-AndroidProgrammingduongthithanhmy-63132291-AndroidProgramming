@@ -38,10 +38,14 @@
         android:layout_height="53dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="54dp"
         android:ems="10"
         android:inputType="text"
         android:textColorLink="#9A7A19"
         android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/editW"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -52,7 +56,7 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="70dp"
         android:text="Weight:"
-        android:textColor="#AE8C28"
+        android:textColor="#A8820D"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -78,8 +82,35 @@
         android:layout_marginEnd="125dp"
         android:backgroundTint="#F1E688"
         android:text="Calculate"
+        android:textColor="#7E6825"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editW" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:text="Your BMI"
+        android:textColor="#A8820D"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="221dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
