@@ -1,6 +1,7 @@
 package ntu_63132291.cau2_appbmi;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    public void HamXuLyBMI(){
+    public void HamXuLyBMI(View view){
         //Tham chiếu
         EditText h = findViewById(R.id.editH);
         EditText w = findViewById(R.id.editW);
@@ -33,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         String strh = h.getText().toString();
         String strw = w.getText().toString();
         //Chuyển sang dạng số
-        int height =   Integer.parseInt(strh);
-        int weight =   Integer.parseInt(strw);
+        double height =   Double.parseDouble(strh);
+        double weight =   Double.parseDouble(strw);
         //Tính toán
-        int BMI = weight / (height * height);
+        double BMI = weight / (height * height);
         //Chuyển sang dạng chuỗi
         String strBMI = String.format("%.2f", BMI);
         //Hiện ra màn hình(Lấy dữ liệu hiện ra màn hình)
