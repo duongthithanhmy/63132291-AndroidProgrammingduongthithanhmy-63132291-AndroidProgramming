@@ -3,6 +3,7 @@ package ntu_63132291.cau2_appbmi;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,5 +43,16 @@ public class MainActivity extends AppCompatActivity {
         String strBMI = String.format("%.2f", BMI);
         //Hiện ra màn hình(Lấy dữ liệu hiện ra màn hình)
         kq.setText(strBMI);
+        TextView tt;
+        tt = findViewById(R.id.textViewtt);
+        if (BMI <= 18.5) {
+          tt.setText("Underweight");
+        } else if (BMI <= 24.9) {
+            tt.setText("Normal");
+        } else if (BMI <= 29.9) {
+            tt.setText("Overweight");
+        } else {
+            tt.setText("Obese");
+        }
     }
 }
