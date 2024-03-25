@@ -29,15 +29,16 @@ public class MainActivity extends AppCompatActivity {
         EditText h = findViewById(R.id.editH);
         EditText w = findViewById(R.id.editW);
         EditText kq = findViewById(R.id.editKQ);
-
+        //Lấy dữ liệu về
         String strh = h.getText().toString();
         String strw = w.getText().toString();
-
+        //Chuyển sang dạng số
         int height =   Integer.parseInt(strh);
         int weight =   Integer.parseInt(strw);
-
+        //Tính toán
         int BMI = weight / (height * height);
-        String strBMI = String.valueOf(BMI); //Chuyển sang dạng chuỗi
+        //Chuyển sang dạng chuỗi
+        String strBMI = String.format("%.2f", BMI);
         //Hiện ra màn hình(Lấy dữ liệu hiện ra màn hình)
         kq.setText(strBMI);
     }
