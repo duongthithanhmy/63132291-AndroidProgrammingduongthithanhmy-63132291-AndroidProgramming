@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    public void HamXuLyBMI() {
+    public void HamXuLyBMI(View view) {
         //Tham chiếu
         EditText h = findViewById(R.id.editH);
         EditText w = findViewById(R.id.editW);
