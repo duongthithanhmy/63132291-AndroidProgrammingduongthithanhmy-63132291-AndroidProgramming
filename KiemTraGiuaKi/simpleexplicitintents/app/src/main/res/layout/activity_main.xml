@@ -23,6 +23,7 @@
         android:layout_width="277dp"
         android:layout_height="80dp"
         android:layout_marginTop="40dp"
+        android:onClick="ChuyenManHinh"
         android:text="Chuyển sang trang khác"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
